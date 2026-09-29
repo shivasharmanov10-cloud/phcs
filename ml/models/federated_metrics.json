@@ -1,0 +1,123 @@
+{
+    "algorithm": "FedAvg",
+    "model_version": "v2.0",
+    "model_type": "federated_historical_demand_regression",
+    "participating_phcs": 6,
+    "rounds": 8,
+    "total_samples": 6768,
+    "medicine_count": 8,
+    "feature_count": 21,
+    "parameter_count": 22,
+    "local_epochs": 80,
+    "learning_rate": 0.01,
+    "normalization": "global_standardization",
+    "feature_names": [
+        "stock_quantity",
+        "received_quantity",
+        "expired_quantity",
+        "population",
+        "demand_lag_1",
+        "demand_lag_2",
+        "demand_lag_7",
+        "demand_lag_14",
+        "demand_rolling_7",
+        "demand_rolling_14",
+        "demand_rolling_std_7",
+        "day_of_week",
+        "day_of_month",
+        "month",
+        "day_of_year",
+        "dow_sin",
+        "dow_cos",
+        "month_sin",
+        "month_cos",
+        "stock_received_ratio",
+        "expired_ratio"
+    ],
+    "training_samples": 6768,
+    "validation_samples": 1248,
+    "final_validation_rmse": 10.216099465325069,
+    "final_validation_mae": 6.496677729801015,
+    "round_metrics": [
+        {
+            "round": 1,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 1372.9415661005808,
+            "global_rmse": 37.05322612270868,
+            "validation_mse": 1319.3071222245615,
+            "validation_rmse": 36.32226758098345,
+            "validation_mae": 32.89632461344727
+        },
+        {
+            "round": 2,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 903.1856835313182,
+            "global_rmse": 30.05304782432754,
+            "validation_mse": 882.499016682764,
+            "validation_rmse": 29.706885004704954,
+            "validation_mae": 26.871945909976077
+        },
+        {
+            "round": 3,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 554.6500696768818,
+            "global_rmse": 23.55100995025228,
+            "validation_mse": 533.1532615363491,
+            "validation_rmse": 23.090111769680743,
+            "validation_mae": 20.198509486248998
+        },
+        {
+            "round": 4,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 341.3796063096111,
+            "global_rmse": 18.47646087078397,
+            "validation_mse": 308.20607011819857,
+            "validation_rmse": 17.55579876047224,
+            "validation_mae": 14.32939302032748
+        },
+        {
+            "round": 5,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 237.04885236603042,
+            "global_rmse": 15.396390887673332,
+            "validation_mse": 192.36481178929841,
+            "validation_rmse": 13.869564224924243,
+            "validation_mae": 10.27265508692124
+        },
+        {
+            "round": 6,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 193.0681130905798,
+            "global_rmse": 13.894895216970145,
+            "validation_mse": 140.0792359966866,
+            "validation_rmse": 11.835507424554581,
+            "validation_mae": 8.082636744714067
+        },
+        {
+            "round": 7,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 174.6538202399399,
+            "global_rmse": 13.21566571308233,
+            "validation_mse": 116.05227521070553,
+            "validation_rmse": 10.772756156653019,
+            "validation_mae": 7.007945034340353
+        },
+        {
+            "round": 8,
+            "participating_phcs": 6,
+            "samples": 6768,
+            "global_mse": 166.67618950810282,
+            "global_rmse": 12.91031330015282,
+            "validation_mse": 104.36868828541516,
+            "validation_rmse": 10.216099465325069,
+            "validation_mae": 6.496677729801015
+        }
+    ]
+}

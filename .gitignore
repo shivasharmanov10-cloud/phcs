@@ -1,2 +1,29 @@
 
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
 __pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML generated files
+*.log
+
+# Test/cache
+.pytest_cache/
+.coverage
+htmlcov/
